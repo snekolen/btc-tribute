@@ -1,0 +1,327 @@
+html, body {
+    margin:0px;
+    height:100%;
+    background: #27273b;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: white;
+    }
+}
+
+button {
+    color: white;
+}
+
+/*Nav bar*/
+
+#nav-bar{
+    background: #090911;
+    opacity : 0.9;
+}
+
+#nav-obj {
+    padding-top: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+}
+
+.nav-link {
+    color: white;
+    margin-left : 45px;
+    font-family: Tahoma;
+    font-size: 17px;
+}
+
+.nav li a:hover{
+    color: white;
+    border-bottom: 3px solid #bfc7ab;
+}
+
+#logo{
+    color: white;
+    font-family: Tahoma;
+    font-weight: 540;
+}
+
+
+/*Home*/
+
+.container-fluid {
+    display: flex;
+}
+
+.box {
+    background-image: url('https://i.imgur.com/C3SzpGY.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    height : 100%;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hp-title {
+    font-size: 118px;
+    font-family: Courier;
+    color: white;
+}
+
+.box h1{
+    overflow: hidden;
+    border-right: .07em solid #9f849c;
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .08em;
+    animation: 
+      typing 3s steps(80, end),
+      blink-caret 1.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9f849c; }
+}
+
+#hp-intro {
+    padding-top: 30px;
+    font-size: 23px;
+    font-family: Trebuchet MS;
+    color: white;
+}
+
+
+/*About*/
+#about {
+    display: flex;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    padding-left: 18vw;
+    padding-right: 18vw;
+}
+
+#about-media {
+    padding-top: 20px;
+    width : 150px;
+    position: relative;
+}
+
+#about-media img {
+    height: 150px;
+    width : 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#about-links {
+    padding-top: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+}
+
+#about-links i {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+}
+
+#about #about-text{
+    padding-left: 80px;
+}
+
+#about h2 {
+    color: white;
+    font-family: Courier;
+    font-style: bold;
+    font-size: 36px;
+}
+
+#about p {
+    color: white;
+    font-family: sans-serif;
+    padding-bottom: 14px;
+    line-height: 1.6;
+}
+
+#about-text button{
+    background-color: #be98be;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    font-family: Trebuchet MS;
+    font-size : 17px;
+    border-radius: 4px;
+}
+
+#about-text a{
+    text-decoration: none;
+}
+
+
+#about-text button:hover {
+    background-color: #c1adbd;
+    text-decoration: none;
+}
+
+/*Resume*/
+#resume {
+    color: white;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#resume h2, #projects h2{
+    font-family: Courier;
+    font-style: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+#resume h3{
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    padding-bottom: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: #aa91af;
+    width: fit-content;
+    border-bottom-width: 3px;
+}
+
+#resume h4 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    padding-top: 5px;
+    font-style: bold;
+}
+
+#resume h5 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+#resume li {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+#resume li::marker {
+    content: "✬";
+}
+
+#skills, #work {
+    padding-top: 40px;
+}
+
+#work2 {
+    padding-top: 20px;
+}
+
+
+/*Projects*/
+#projects {
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 100px; 
+    color: white;
+    padding-bottom: 130px;
+}
+
+#muse, #pomodoro, #maze-bot {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#muse img, #pomodoro img, #maze-bot img {
+    height: 150px;
+    width : 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+#muse-text, #pomo-text, #maze-text {
+    padding-left: 80px;
+}
+
+#muse-text h3, #pomo-text h3, #maze-text h3 {
+    font-family: 'Trebuchet MS';
+    font-size: 26px;
+    padding-bottom: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: #aa91af;
+    width: fit-content;
+    border-bottom-width: 3px;
+    padding-top: 10px;
+}
+
+#muse-text p, #pomo-text p, #maze-text p {
+    font-family: sans-serif;
+}
+
+#muse-text {
+    display: block;
+}
+
+#muse-btns button, #pomo-btns button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Trebuchet MS;
+    font-size : 16px;
+    border-radius: 4px;
+}
+
+#muse-text p, #pomo-text p, #maxe-text p{
+    padding-bottom: 7px;
+    line-height: 1.6;
+}
+
+#muse-btns a, #pomo-btns a {
+    padding-right: 40px;
+}
+
+#pomo-text p a{
+    color: white;
+}
+
+.repo {
+    background-color: #23272A;
+}
+
+.repo:hover {
+    background-color: #2C2F33;
+}
+
+.invite {
+    background-color: #5865F2;
+}
+
+.invite:hover {
+    background-color: #5e7df0;
+}
+
+

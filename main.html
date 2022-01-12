@@ -1,74 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
-      <link rel="stylesheet" href="style.css">
+<head id = "heading">
+      <title>Helen Ma</title>
+      <link rel= "stylesheet" href= "style.css">
+      <link red = "text/javascript" href = "script.js">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="script.js"></script>
 </head>
 
-<nav id = "nav-bar">
-      <u1>
-            <li><a class = "nav-link" href = "#home">Home</a></li>
-            <li><a class = "nav-link" href = "#about">About</a></li>
-            <li><a class = "nav-link" href = "#resume">Resume</a></li>
-            <li><a class = "nav-link" href = "#projects">Projects</a></li>
-      </u1>
-</nav>
-<div class = "home-page">
-<section id = "home">
-      <h2>Welcome to my portfolio, where you can see some of my creations!</h2>
-</section>
-</div>
+<body>
+      <nav class = "fixed-top" id = "nav-bar">
+            <div id = "nav-obj">
+                  <a class="navbar-brand" id = "logo" href="#home">Helen Ma</a>
+                  <ul class="nav float-right">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                  </ul>
+            <div>
+      </nav>   
 
-<div class = "about-page">
-<section id = "about">
-      <h1>About</h1>
-      <p>
-      Howdy!  I'm Helen. I'm a Computer Science student at Texas A&M University looking to go into 
-      software development.  My interests lie in development and systems and my work is a reflection 
-      of my progress in developing proficiency in those fields.  Coding languages I have used include C++, 
-      C, Python, Java, HTML, and CSS. In my free time, I enjoy crocheting, cooking, and working out.
-      </p>
-</section>
-</div>
+      <div class = "box" id = "home">  <!--Include github here-->
+            <div class = "center">
+                  <h1 id = "hp-title">Howdy!</h1>
+                  <p id = "hp-intro">Welcome to my portfolio. Come learn more about me, both as a person and programmer.</p>
+            </div>
+      </div>
+      
+      <section id = "about">
+            <div id = "about-media">
+                  <img src = "https://i.imgur.com/eVu47wG.png" />
 
-<div class = "resume-page">
-<section id = "resume">
-      <h1>Resume</h1>
-      <h2>Education</h2>
-      <h3>Texas A&M School of Engineering</h3>
-      <p>BS in Computer Science</p>
-      <p>2020-2024</p>
-      <p>
-      Relevant Coursework: Introduction to Program Design and Concepts, Linear Algebra, Data Structures 
-      and Algorithms, Computer Organization
-      </p>
+                  <div id = "about-links">
+                        <a href = "https://www.linkedin.com/in/helenma-1216"><i class="bi bi-linkedin"></i></a>
+                        <a href = "https://github.com/snekolen"><i class="bi bi-github"></i></a>
+                        <a href = "https://www.instagram.com/mel0n_bre4d"><i class="bi bi-instagram"></i></a>
+                  </div>
+            </div>
+            <div id = "about-text">
+                  <h2>About Me</h2>
 
-      <h2>Work</h2>
-      <h3>Texas A&M School of Engineering</h3>
-      <p>Peer Teacher</p>
-      <p>August 2021 - Present</p>
-      <p>Peer teacher for ENGR 102</p>
-</section>
-</div>
+                  <p>
+                  Hello!  I'm Helen Ma and am currently a sophomore at Texas A&M University looking to change my major to Computer 
+                  Science or related fields and earn minor in Cybersecurity.  My goal is to become software developer after graduation.  
+                  <br />
+                  I found my passion for programming through developing web pages during my senior year of high school 
+                  and thus decided to pursue Computer Science.  My interests lie in software, systems, and digital ethics, and my work is 
+                  a relection of that.
+                  <br />
+                  My hobbies include crocheting stuffed animals, cooking, and working out.
+                  </p>
+                  <a href = "https://drive.google.com/file/d/10xBmizmjVOx7d-8NLotZm2g70caquwu_/view?usp=sharing">
+                        <button><i class="bi bi-file-earmark-person-fill"></i>&emsp;My Resume </button>
+                  </a>
+            </div>
+      </section>
 
-<div class = "projects-page">
-<section id = "projects">
-      <h1 href = "#projects">Projects</h1>
-      <h2>Muse</h2>
-      <p>
-      Muse is a discord bot that sends music based on user-inputted countries and decades and keeps track of top 
-      search terms and recently liked songs in a server.  It is coded in Python and uses various APIs and classes 
-      to do the aforementioned tasks.  The links below include a repository and server invite link.
-      </p>
-      <p>Repository: https://github.com/snekolen/muse</p>
-      <p>Server invite: https://tinyurl.com/muse-bot</p>
 
-      <h2>MazeBot</h2>
-      <p>
-      MazeBot is maze traversal robot that uses LIDAR sensors to navigate through a maze.  It is a collaborative 
-      project between students of various majors whose skills lie within the group's computer science, electrical, 
-      and mechanical engineering subgroups.  This project is currently a work in progress.
-      </p>
-</section>
-</div>
+      <section id = "resume">
+            <h2>Resume</h2>
+
+            <div id = "edu">
+                  <h3>Education</h3>
+                  <h4>Texas A&M School of Engineering</h4>
+                  <h5>BS in Electrical Engineering, Minor in Computer Science&emsp;•&emsp;August 2020 - May 2024</h5>
+                  <u1>
+                        <li><b>&ensp;GPA:</b> 3.2/4.0</li>
+                        <li><b>&ensp;Relevant Coursework:</b> Introduction to Program Design and Concepts, Linear Algebra, Data Structures and Algorithms, Computer Organization</li>  
+                  </u1>
+            </div>
+
+            <section id = "skills">
+                  <h3>Skills</h3>
+                  <u1>
+                        <li>&ensp;Python, C++, Java, C, HTML, CSS, Javascript </li>
+                        <li>&ensp;Proficiency withobject oriented programming and data structures</li>
+                        <li>&ensp;Familiarity with using numpy and pandas Python libraries and Jupyter Notebook for data analysis</li>
+                        <li>&ensp;Proficiency in using Git and Linux to commit code to its repository and compile programs</li>
+                        <li>&ensp;Native fluency in English and Chinese </li>
+                  </u1>
+            </section>
+
+            <div id = "work">
+                  <h3>Work Experience</h3>
+
+                  <div id = "work-text">
+                        <h4>Texas A&M School of Engineering</h4>
+                        <h5>Peer Teacher for ENGR 102&emsp;•&emsp;August 2021- December 2021</h5>
+                        <u1>
+                              <li>&ensp;Mentored and aided freshman engineering students to achieve proficiency with software engineering principles 
+                              by making programs in Python </li>
+                              <li>&ensp;Coordinated with other peer teachers in the section to ensure punctuality and equitable evaluation when grading 
+                              assignments and to proctor exams for the course</li>
+                              <li>&ensp;Provided supplementary tutoring to students to bridge the instruction gap between students and professors</li>
+                        </u1>
+                        
+                        <h5 id = "work2">Peer Teacher for ENGR 216&emsp;•&emsp;January 2021- Present</h5>
+                        <u1>
+                              <li>&ensp;Assisted students in becoming acqainted with applying engineering and physics concepts to interpreting data 
+                              collected by a Jetson machine and sensor</li>
+                              <li>&ensp;Coordinated with other peer teachers in the lab section to equitably grade reports in a punctual manner and 
+                              ensure that students have an adequate understanding of lab objectives</li>
+                        </u1>
+                  </div>
+            </div>
+      </section>
+
+
+      <section id = "projects">
+            <h2>Projects</h2>
+
+            <div id = "muse">
+                  <img src = "https://i.imgur.com/4oSXiHt.jpg" />
+
+                  <div id = "muse-text">
+                        <h3>Muse</h3>
+                        <p>
+                        Muse is a Discord bot that sends music based on user-inputted countries and decades and keeps track of top 
+                        search terms and recently liked songs in a server.  This bot uses Discord's API to send messages based on  
+                        an user's input that it reads.  Muse uses Musicbrainz to search up songs from a certain country and decade 
+                        and searches YouTube for a link for that song.  Additionally, it pulls up a list of countries that existed 
+                        during decades after the 1900s and top searched and recently liked songs among all servers Muse has been 
+                        invited to.
+                        <br />
+                        All commands have a '+', followed by the valid terms 'help', 'list', 'song', and 'top'.  More information 
+                        about the bot and its server invite can be found in the links below.
+                        </p>
+
+                        <div id = "muse-btns">
+                              <a href = "https://github.com/snekolen/muse"><button class = "repo"><i class="bi bi-github"></i>&emsp;Repository</button></a>
+                              <a href = "https://tinyurl.com/muse-bot"><button class = "invite"><i class="bi bi-discord"></i>&emsp;Server Invite</button></a>
+                        </div>
+                        <!--<p>Repository: https://github.com/snekolen/muse</p>
+                        <p>Server invite: https://tinyurl.com/muse-bot</p>-->
+                  </div>
+            </div>
+ 
+            <div id = "maze-bot">
+                  <img src = "https://i.imgur.com/2OeF2XG.png" />
+
+                  <div id = "maze-text">
+                        <h3>MazeBot</h3>
+                        <p>
+                        MazeBot is maze traversal robot that uses LIDAR sensors to navigate through any given maze.  It is a collaborative 
+                        project of students of TURTLE robotics from computer science, electrical engineering, mechanical engineering, and 
+                        related majors.  Mazebot is run using a Nvidia Jetson computer and the final product is ensured to have perfect 
+                        accuracy by using data gathered by previous trials.  This project is currently a work in progress.
+                        </p>
+                  </div>
+            </div>
+
+            <div id = "pomodoro">
+                  <img src = "https://i.imgur.com/EV4B0Tk.png" />
+
+                  <div id = "pomo-text">
+                        <h3>Pomodoro</h3>
+                        <p>
+                        Pomodoro is a pomodoro desktop app that is based off <a href = "https://pomofocus.io/">pomofocus.io</a>.  Likewise, 
+                        it can be said that Pomodoro is the desktop version of pomofocus.  Pomodoro is coded using Java and it contains a 
+                        timer and task menu.  A traditional Pomodoro time interval is 30 minutes, with 25 minutes for completing tasks and a 
+                        5 minute break following it, but Pomodoro allows users to change that to their liking.  It also allows users to change 
+                        notification messages and enable desktop notifications and notification sounds.  This application is a work in progress.
+                        </p>
+                        <div id = "pomo-btns">
+                              <a href = "https://github.com/snekolen/muse"><button class = "repo"><i class="bi bi-github"></i>&emsp;Repository</button></a>
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+
+</body>
 <!--Include footer where there are social media links-->
 </html>
+
+
+<!--Sources:-->
+<!--Cursor trail: https://sites.google.com/site/unwanted86/javascript  (used aqua.js)-->
