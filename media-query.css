@@ -1,0 +1,402 @@
+
+@media screen and (min-width: 897px) and (max-width: 1024px) {
+    #hp-title {
+        font-size : 108px;
+    }
+
+    #hp-intro {
+        font-size: 21.5px;
+        padding-top: 32px;
+    }
+}
+
+
+@media screen and (max-width: 950px) { /*<950px*/
+    #about-media {
+        left:50%;
+        transform: translate(-50%, 0%);
+    }
+    #about-media img {
+        height: 150px;
+        width : 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    
+    #about p {
+        padding-left: 0px;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    #about #about-text {
+        padding-left: 0px;
+        position: relative;
+    }
+
+    #about-content {
+        display: block;
+        justify-content: center;
+    }
+
+    #about-text a{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    #about-links {
+        padding-top: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+    }
+
+    #about {
+        padding-top: 90px;
+        padding-bottom: 30px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    #resume {
+        color: white;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-top: 110px;
+        padding-bottom: 30px;
+    }
+
+    #projects {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-top: 80px; 
+        color: white;
+        padding-bottom: 120px;
+    }
+
+}
+
+@media screen and (max-width: 896px) {
+    /*Navbar*/
+    #logo {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+
+    /*About*/
+    #about p{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    /*Resume*/
+
+    h3 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #resume h4 {
+        font-size: 18px;
+    }
+
+    #resume h5 {
+        font-size: 15px;
+    }
+
+    #edu h4, #edu h5, #work-text h4, #work-text h5{
+        text-align: center;
+    }
+
+    /*Projects*/
+    #muse, #maze-bot, #pomodoro {
+        display: block;
+        position: relative;
+        justify-content: center;
+    }
+
+    #muse-text, #maze-text, #pomo-text {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    #muse-text h3, #maze-text h3, #pomo-text h3{
+
+        padding-bottom: 7px;
+        padding-top: 170px;
+    }
+
+    #muse img, #maze-bot img, #pomodoro img{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+@media screen and (min-width: 769px) and  (max-width: 896px) {
+    #hp-title {
+        font-size : 96px;
+    }
+
+    #hp-intro {
+        font-size: 20px;
+        padding-top: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #hp-title {
+        font-size : 88px;
+    }
+
+    #hp-intro {
+        font-size: 18.5px;
+        padding-top: 34px;
+    }
+
+    /*About*/
+    #about p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    #about-media img {
+        height: 150px;
+        width : 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        padding-top: 5px;
+    }
+
+
+    #about-text button {
+        padding-top: 12px;
+        font-size: 14px;
+    }
+
+
+    /*Resume*/
+    #resume h3 {
+        font-size: 22px;
+    }
+
+    /*Projects*/
+    #muse-text h3, #pomo-text h3, #maze-text h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 481px) and (max-width: 896px) {
+    #muse img, #pomodoro img, #maze-bot img {
+        height: 130px;
+        width : 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        padding-top: 5px;
+    }
+
+    #about p{
+        font-size: 13px;
+        padding-top: 40px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 481px) and  (max-width: 624px){
+    #hp-title {
+        font-size : 80px;
+    }
+
+    #hp-intro {
+        font-size: 17px;
+        padding-top: 34px;
+    }
+    
+    
+    #about, #resume {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    #projects{ /*Check if issue*/
+        padding-left: 18vw;
+    }
+
+    #about p {
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+
+    #about-links i {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .repo span, .invite span {
+        display: none;
+    }
+
+    #resume li {
+        font-size: 14px;
+    }
+
+    #resume {
+        margin: 0 auto;
+        padding-left: 14vw;
+        padding-right: 14vw;
+    }
+
+    #projects {
+        font-size: 14px;
+    }
+
+    #maze-bot, #pomodoro{
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    #viz {
+        display: none;
+    }
+
+    #muse {
+        position: relative;
+        padding-bottom: 80px;
+    }
+
+    #muse-btns {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+    }
+
+    #maze-bot {
+        position: relative;
+        padding-bottom: 80px;
+    }
+
+    #maze-btns {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+    }
+
+    #pomo-btns, #muse-btns {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){ /*Mobile size*/
+
+    #hp-title {
+        font-size : 72px;
+    }
+
+    #hp-intro {
+        font-size: 15.5px;
+        padding-top: 40px;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    #about{
+        padding-top: 50px;
+    }
+
+    #about p{
+        font-size: 13px;
+        padding-top: 45px;
+    }
+
+    #about-text button, #maze-btns button {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    #about-links i, #maze-btns i {
+        font-size: 15px;
+    }
+
+    #resume li {
+        font-size: 13px;
+    }
+
+    #resume h4 {
+        font-size: 16px;
+    }
+
+    #resume h5 {
+        font-size: 14px;
+    }
+
+    #resume h3 {
+        font-size: 20px;
+    }
+
+    /*Projects*/
+    #projects p {
+        font-size: 13px;
+    }
+
+    #muse-text h3, #pomo-text h3, #maze-text h3 {
+        font-size: 22px;
+        padding-top: 145px;
+    }
+
+    img {
+       height: 110px; 
+       width: 110px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    span {
+        display: none;
+    }
+
+    #muse-btns {
+        padding-left: 45px;
+    }
+}
+
+@media screen and (max-width: 300px){ /*Mobile size*/
+    #hp-title {
+        font-size : 56px;
+    }
+
+    #hp-intro {
+        font-size: 15px;
+        padding-top: 26px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
