@@ -82,7 +82,7 @@
 @media screen and (max-width: 896px) {
     /*Navbar*/
     #logo {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .nav-link {
@@ -115,24 +115,24 @@
     }
 
     /*Projects*/
-    #muse, #maze-bot, #pomodoro {
+    #muse, #maze-bot, #flight-viz {
         display: block;
         position: relative;
         justify-content: center;
     }
 
-    #muse-text, #maze-text, #pomo-text {
+    #muse-text, #maze-text, #flight-text {
         padding-left: 0px;
         text-align: center;
     }
 
-    #muse-text h3, #maze-text h3, #pomo-text h3{
+    #muse-text h3, #maze-text h3, #flight-text h3{
 
         padding-bottom: 7px;
         padding-top: 170px;
     }
 
-    #muse img, #maze-bot img, #pomodoro img{
+    #muse img, #maze-bot img, #flight-viz img{
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
@@ -188,13 +188,13 @@
     }
 
     /*Projects*/
-    #muse-text h3, #pomo-text h3, #maze-text h3 {
+    #muse-text h3, #flight-text h3, #maze-text h3 {
         font-size: 24px;
     }
 }
 
 @media screen and (max-width: 481px) and (max-width: 896px) {
-    #muse img, #pomodoro img, #maze-bot img {
+    #muse img, #flight-viz img, #maze-bot img {
         height: 130px;
         width : 130px;
         object-fit: cover;
@@ -262,15 +262,87 @@
         font-size: 14px;
     }
 
-    #maze-bot, #pomodoro{
+    #maze-bot, #flight-viz{
         margin: 0 auto;
         align-items: center;
     }
 }
 
-@media screen and (max-width: 624px) {
-    #viz {
+@media screen and (min-width: 625px) {
+    .icon i {
         display: none;
+    }
+
+    #viz {
+        padding-right: 60px;
+    }
+
+    #nav-obj {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 624px) { /*Adjusts navbar*/
+    #viz {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 100px;
+    }
+
+    #viz a{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #nav-bar {
+        opacity: 0.97;
+    }
+
+    .icon i {
+        color: white;
+        font-size: 30px;
+        right: 25px;
+        top: 11px;
+        position: fixed;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #about {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    #resume {
+        padding-top: 50px;
+    }
+
+    #projects {
+        padding-top: 50px;
+    }
+
+    .topnav #logo, .topnav #viz{
+        display: none;
+    }
+
+    .topnav.responsive #logo{
+        display: none;
+    }
+
+    .topnav.responsive #viz {
+        height: 100%;
+        background-color: #090911;
+    }
+
+    .topnav.responsive #nav-item{
+        float: none;
+        display: block;
+        text-align: left;
     }
 
     #muse {
@@ -297,7 +369,7 @@
         display: flex;
     }
 
-    #pomo-btns, #muse-btns {
+    #flight-btns, #muse-btns {
         padding-left: 40px;
     }
 }
@@ -313,9 +385,6 @@
         padding-top: 40px;
     }
 
-    #nav-bar {
-        display: none;
-    }
 
     #about{
         padding-top: 50px;
@@ -359,7 +428,7 @@
         font-size: 13px;
     }
 
-    #muse-text h3, #pomo-text h3, #maze-text h3 {
+    #muse-text h3, #flight-text h3, #maze-text h3 {
         font-size: 22px;
         padding-top: 145px;
     }

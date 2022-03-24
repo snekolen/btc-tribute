@@ -1,14 +1,8 @@
 html, body {
     margin:0px;
     height:100%;
-    background: #27273b;
+    background-color: #27273b;
     scroll-behavior: smooth;
-}
-
-@media screen and (max-width: 600px) {
-    body {
-      background-color: white;
-    }
 }
 
 button {
@@ -20,25 +14,29 @@ button {
 #nav-bar{
     background: #090911;
     opacity : 0.9;
+    width: 100vw;
+    top: 0px;
+    position: fixed;
+    z-index: 1;
 }
 
 #nav-obj {
-    padding-top: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link {
     color: white;
-    margin-left : 45px;
+    margin-left : 50px;
     font-family: Tahoma;
     font-size: 17px;
+    padding-bottom: 8px;
 }
 
-.nav li a:hover{
-    color: white;
-    border-bottom: 3px solid #bfc7ab;
+.nav-link{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;;
 }
 
 #logo{
@@ -47,12 +45,23 @@ button {
     font-weight: 540;
 }
 
+.topnav div{
+    display: flex;
+    float: right;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.nav-link:hover{
+    color: white;
+    border-bottom: 3px solid #bfc7ab;
+}
+
 
 /*Home*/
-
-.container-fluid {
-    display: flex;
-}
 
 .box {
     background-image: url('https://i.imgur.com/C3SzpGY.png');
@@ -72,7 +81,8 @@ button {
 
 #hp-title {
     font-size: 118px;
-    font-family: Courier;
+    font-family: "Courier New";
+    font-weight: lighter;
     color: white;
 }
 
@@ -102,20 +112,35 @@ button {
     font-size: 23px;
     font-family: Trebuchet MS;
     color: white;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
+#about h2, #resume h2, #projects h2{
+    font-family: Courier;
+    font-style: bold;
+    font-size: 36px;
+    text-align: center;
+    font-weight: lighter;
+}
 
 /*About*/
 #about {
-    display: flex;
     padding-top: 110px;
     padding-bottom: 30px;
-    padding-left: 18vw;
-    padding-right: 18vw;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+
+#about h2 {
+    padding-bottom: 5px;
+}
+
+#about-content{
+    display: flex;
 }
 
 #about-media {
-    padding-top: 20px;
     width : 150px;
     position: relative;
 }
@@ -125,6 +150,7 @@ button {
     width : 150px;
     object-fit: cover;
     border-radius: 50%;
+    padding-top: 5px;
 }
 
 #about-links {
@@ -158,6 +184,7 @@ button {
     font-family: sans-serif;
     padding-bottom: 14px;
     line-height: 1.6;
+    text-align: left;
 }
 
 #about-text button{
@@ -166,7 +193,6 @@ button {
     padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 25px;
-    display: flex;
     font-family: Trebuchet MS;
     font-size : 17px;
     border-radius: 4px;
@@ -191,12 +217,6 @@ button {
     padding-bottom: 30px;
 }
 
-#resume h2, #projects h2{
-    font-family: Courier;
-    font-style: bold;
-    font-size: 36px;
-    text-align: center;
-}
 
 #resume h3{
     font-family: 'Trebuchet MS';
@@ -206,6 +226,7 @@ button {
     border-bottom-color: #aa91af;
     width: fit-content;
     border-bottom-width: 3px;
+    font-weight: lighter;
 }
 
 #resume h4 {
@@ -213,12 +234,14 @@ button {
     font-family: 'Trebuchet MS';
     padding-top: 5px;
     font-style: bold;
+    font-weight: lighter;
 }
 
 #resume h5 {
     font-size: 16px;
     font-family: sans-serif;
     font-style: bold;
+    font-weight: lighter;
 }
 
 #resume li {
@@ -248,25 +271,25 @@ button {
     padding-bottom: 130px;
 }
 
-#muse, #pomodoro, #maze-bot {
+#muse, #flight-viz, #maze-bot {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#muse img, #pomodoro img, #maze-bot img {
+#muse img, #flight-viz img, #maze-bot img {
     height: 150px;
     width : 150px;
     object-fit: cover;
     border-radius: 50%;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
-#muse-text, #pomo-text, #maze-text {
+#muse-text, #flight-text, #maze-text {
     padding-left: 80px;
 }
 
-#muse-text h3, #pomo-text h3, #maze-text h3 {
+#muse-text h3, #flight-text h3, #maze-text h3 {
     font-family: 'Trebuchet MS';
     font-size: 26px;
     padding-bottom: 7px;
@@ -275,9 +298,10 @@ button {
     width: fit-content;
     border-bottom-width: 3px;
     padding-top: 10px;
+    font-weight: lighter;
 }
 
-#muse-text p, #pomo-text p, #maze-text p {
+#muse-text p, #flight-text p, #maze-text p {
     font-family: sans-serif;
 }
 
@@ -285,7 +309,7 @@ button {
     display: block;
 }
 
-#muse-btns button, #pomo-btns button {
+#muse-btns button, #maze-btns button, #flight-btns button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -293,18 +317,20 @@ button {
     font-family: Trebuchet MS;
     font-size : 16px;
     border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#muse-text p, #pomo-text p, #maxe-text p{
+#muse-text p, #flight-text p, #maze-text p{
     padding-bottom: 7px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-#muse-btns a, #pomo-btns a {
+#muse-btns a, #mazebtns a, #flight-btns a {
     padding-right: 40px;
 }
 
-#pomo-text p a{
+#flight-text p a{
     color: white;
 }
 
