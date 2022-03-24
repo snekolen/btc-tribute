@@ -7,3 +7,6 @@
 
 ## Code sources:
 - https://sites.google.com/site/unwanted86/javascript (used aqua.js but with modifaction to the color of sparkles)
+
+## Icon sources:
+- https://icons.getbootstrap.com/
