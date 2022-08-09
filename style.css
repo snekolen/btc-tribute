@@ -116,7 +116,7 @@ button {
     margin-right: 2px;
 }
 
-#about h2, #resume h2, #projects h2{
+#about h2, #cv h2, #projects h2{
     font-family: Courier;
     font-style: bold;
     font-size: 36px;
@@ -208,8 +208,8 @@ button {
     text-decoration: none;
 }
 
-/*Resume*/
-#resume {
+/*cv*/
+#cv {
     color: white;
     padding-left: 18vw;
     padding-right: 18vw;
@@ -218,7 +218,7 @@ button {
 }
 
 
-#resume h3{
+#cv h3{
     font-family: 'Trebuchet MS';
     font-size: 24px;
     padding-bottom: 7px;
@@ -229,7 +229,7 @@ button {
     font-weight: lighter;
 }
 
-#resume h4 {
+#cv h4 {
     font-size: 20px;
     font-family: 'Trebuchet MS';
     padding-top: 5px;
@@ -237,19 +237,26 @@ button {
     font-weight: lighter;
 }
 
-#resume h5 {
+#work-text h4 {
+    border-bottom-style: solid;
+    border-bottom-color: #aa91af;
+    width: fit-content;
+    padding-bottom: 4px;
+}
+
+#cv h5 {
     font-size: 16px;
     font-family: sans-serif;
     font-style: bold;
     font-weight: lighter;
 }
 
-#resume li {
+#cv li {
     font-family: sans-serif;
     line-height: 1.6;
 }
 
-#resume li::marker {
+#cv li::marker {
     content: "✬";
 }
 
@@ -271,13 +278,13 @@ button {
     padding-bottom: 130px;
 }
 
-#muse, #flight-viz, #maze-bot {
+#muse, #mlh, #maze-bot {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#muse img, #flight-viz img, #maze-bot img {
+#muse img, #mlh img, #maze-bot img {
     height: 150px;
     width : 150px;
     object-fit: cover;
@@ -285,11 +292,11 @@ button {
     padding-top: 0px;
 }
 
-#muse-text, #flight-text, #maze-text {
+#muse-text, #mlh-text, #maze-text {
     padding-left: 80px;
 }
 
-#muse-text h3, #flight-text h3, #maze-text h3 {
+#muse-text h3, #mlh-text h3, #maze-text h3 {
     font-family: 'Trebuchet MS';
     font-size: 26px;
     padding-bottom: 7px;
@@ -301,7 +308,7 @@ button {
     font-weight: lighter;
 }
 
-#muse-text p, #flight-text p, #maze-text p {
+#muse-text p, #mlh-text p, #maze-text p {
     font-family: sans-serif;
 }
 
@@ -309,7 +316,7 @@ button {
     display: block;
 }
 
-#muse-btns button, #maze-btns button, #flight-btns button {
+#muse-btns button, #maze-btns button, #mlh-btns button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -321,16 +328,16 @@ button {
     text-align: center;
 }
 
-#muse-text p, #flight-text p, #maze-text p{
+#muse-text p, #mlh-text p, #maze-text p{
     padding-bottom: 7px;
     line-height: 1.7;
 }
 
-#muse-btns a, #mazebtns a, #flight-btns a {
+#muse-btns a, #mazebtns a, #mlh-btns a {
     padding-right: 40px;
 }
 
-#flight-text p a{
+#mlh-text p a{
     color: white;
 }
 
@@ -348,6 +355,14 @@ button {
 
 .invite:hover {
     background-color: #5e7df0;
+}
+
+.devpost {
+    background-color: #729aa1;
+}
+
+.devpost:hover {
+    background-color: #86afb6;
 }
 
 

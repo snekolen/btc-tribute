@@ -61,7 +61,7 @@
         margin-right: 15vw;
     }
 
-    #resume {
+    #cv {
         color: white;
         padding-left: 15vw;
         padding-right: 15vw;
@@ -102,11 +102,11 @@
         margin: 0 auto;
     }
 
-    #resume h4 {
+    #cv h4 {
         font-size: 18px;
     }
 
-    #resume h5 {
+    #cv h5 {
         font-size: 15px;
     }
 
@@ -115,24 +115,24 @@
     }
 
     /*Projects*/
-    #muse, #maze-bot, #flight-viz {
+    #muse, #maze-bot, #mlh {
         display: block;
         position: relative;
         justify-content: center;
     }
 
-    #muse-text, #maze-text, #flight-text {
+    #muse-text, #maze-text, #mlh-text {
         padding-left: 0px;
         text-align: center;
     }
 
-    #muse-text h3, #maze-text h3, #flight-text h3{
+    #muse-text h3, #maze-text h3, #mlh-text h3{
 
         padding-bottom: 7px;
         padding-top: 170px;
     }
 
-    #muse img, #maze-bot img, #flight-viz img{
+    #muse img, #maze-bot img, #mlh img{
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
@@ -183,18 +183,18 @@
 
 
     /*Resume*/
-    #resume h3 {
+    #cv h3 {
         font-size: 22px;
     }
 
     /*Projects*/
-    #muse-text h3, #flight-text h3, #maze-text h3 {
+    #muse-text h3, #mlh-text h3, #maze-text h3 {
         font-size: 24px;
     }
 }
 
 @media screen and (max-width: 481px) and (max-width: 896px) {
-    #muse img, #flight-viz img, #maze-bot img {
+    #muse img, #mlh img, #maze-bot img {
         height: 130px;
         width : 130px;
         object-fit: cover;
@@ -222,7 +222,7 @@
     }
     
     
-    #about, #resume {
+    #about, #cv {
         padding-left: 0vw;
         padding-right: 0vw;
     }
@@ -248,11 +248,11 @@
         display: none;
     }
 
-    #resume li {
+    #cv li {
         font-size: 14px;
     }
 
-    #resume {
+    #cv {
         margin: 0 auto;
         padding-left: 14vw;
         padding-right: 14vw;
@@ -262,7 +262,7 @@
         font-size: 14px;
     }
 
-    #maze-bot, #flight-viz{
+    #maze-bot, #mlh{
         margin: 0 auto;
         align-items: center;
     }
@@ -318,7 +318,7 @@
         padding-bottom: 80px;
     }
 
-    #resume {
+    #cv {
         padding-top: 50px;
     }
 
@@ -369,7 +369,7 @@
         display: flex;
     }
 
-    #flight-btns, #muse-btns {
+    #mlh-btns, #muse-btns {
         padding-left: 40px;
     }
 }
@@ -407,19 +407,19 @@
         font-size: 15px;
     }
 
-    #resume li {
+    #cv li {
         font-size: 13px;
     }
 
-    #resume h4 {
+    #cv h4 {
         font-size: 16px;
     }
 
-    #resume h5 {
+    #cv h5 {
         font-size: 14px;
     }
 
-    #resume h3 {
+    #cv h3 {
         font-size: 20px;
     }
 
@@ -428,7 +428,7 @@
         font-size: 13px;
     }
 
-    #muse-text h3, #flight-text h3, #maze-text h3 {
+    #muse-text h3, #mlh-text h3, #maze-text h3 {
         font-size: 22px;
         padding-top: 145px;
     }
