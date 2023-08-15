@@ -278,13 +278,13 @@ button {
     padding-bottom: 130px;
 }
 
-#muse, #mlh, #maze-bot {
+#muse, #mlh, #maze-bot, #tabs, #armv8 {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#muse img, #mlh img, #maze-bot img {
+#muse img, #mlh img, #maze-bot img, #tabs img, #armv8 img{
     height: 150px;
     width : 150px;
     object-fit: cover;
@@ -292,11 +292,11 @@ button {
     padding-top: 0px;
 }
 
-#muse-text, #mlh-text, #maze-text {
+#muse-text, #mlh-text, #maze-text, #tabs-text, #armv8-text {
     padding-left: 80px;
 }
 
-#muse-text h3, #mlh-text h3, #maze-text h3 {
+#muse-text h3, #mlh-text h3, #maze-text h3, #tabs-text h3, #armv8-text h3 {
     font-family: 'Trebuchet MS';
     font-size: 26px;
     padding-bottom: 7px;
@@ -308,7 +308,7 @@ button {
     font-weight: lighter;
 }
 
-#muse-text p, #mlh-text p, #maze-text p {
+#muse-text p, #mlh-text p, #maze-text p, #tabs-text p, #armv8-text p {
     font-family: sans-serif;
 }
 
@@ -316,7 +316,7 @@ button {
     display: block;
 }
 
-#muse-btns button, #maze-btns button, #mlh-btns button {
+#muse-btns button, #maze-btns button, #mlh-btns button, #tabs-btns button, #armv8-btns button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -328,12 +328,12 @@ button {
     text-align: center;
 }
 
-#muse-text p, #mlh-text p, #maze-text p{
+#muse-text p, #mlh-text p, #maze-text p, #tabs-text p, #armv8-text p {
     padding-bottom: 7px;
     line-height: 1.7;
 }
 
-#muse-btns a, #mazebtns a, #mlh-btns a {
+#muse-btns a, #mazebtns a, #mlh-btns a, #tabs-btns a, #armv8-btns a{
     padding-right: 40px;
 }
 
