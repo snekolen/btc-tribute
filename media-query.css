@@ -115,24 +115,24 @@
     }
 
     /*Projects*/
-    #muse, #maze-bot, #mlh {
+    #muse, #maze-bot, #mlh, #tabs, #armv8, #sac {
         display: block;
         position: relative;
         justify-content: center;
     }
 
-    #muse-text, #maze-text, #mlh-text {
+    #muse-text, #maze-text, #mlh-text, #tabs-text, #armv8-text, #sac-text {
         padding-left: 0px;
         text-align: center;
     }
 
-    #muse-text h3, #maze-text h3, #mlh-text h3{
+    #muse-text h3, #maze-text h3, #mlh-text h3, #tabs-text h3, #armv8-text h3, #sac-text h3{
 
         padding-bottom: 7px;
         padding-top: 170px;
     }
 
-    #muse img, #maze-bot img, #mlh img{
+    #muse img, #maze-bot img, #mlh img, #tabs img, #armv8 img, #sac-text img {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
@@ -188,13 +188,13 @@
     }
 
     /*Projects*/
-    #muse-text h3, #mlh-text h3, #maze-text h3 {
+    #muse-text h3, #mlh-text h3, #maze-text h3, #tabs-text h3, #armv8-text h3, #sac-text h3 {
         font-size: 24px;
     }
 }
 
 @media screen and (max-width: 481px) and (max-width: 896px) {
-    #muse img, #mlh img, #maze-bot img {
+    #muse img, #mlh img, #maze-bot img, #tabs img, #armv8 img, #sac img {
         height: 130px;
         width : 130px;
         object-fit: cover;
@@ -428,7 +428,7 @@
         font-size: 13px;
     }
 
-    #muse-text h3, #mlh-text h3, #maze-text h3 {
+    #muse-text h3, #mlh-text h3, #maze-text h3, #tabs-text h3, #armv8-text h3, #sac-text h3 {
         font-size: 22px;
         padding-top: 145px;
     }
